@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from './links.module.css'
-import NavLink from './navLink/NavLink'
+import NavLink from './navLink/navLink';
 
 const Links = () => {
 const [open, setOpen] = useState(false);
