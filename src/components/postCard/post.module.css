@@ -1,0 +1,32 @@
+.card{
+    height: 280px; 
+    background-image: url('../../../public/politics-card.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); */
+    border-radius: 10px;
+}
+
+.category{
+    position: absolute;
+  color: white;
+  padding: 2px 8px; /* equivalent to px-3 py-2 in Bootstrap */
+  z-index: 10;
+  top: 20px;
+  right: 20px;
+  background-color: #9B5DE5;
+}
+
+.title{
+        position: absolute;
+        padding: 1rem; /* Equivalent to p-3 in Bootstrap */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1));
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+}
