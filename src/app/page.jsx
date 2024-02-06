@@ -7,7 +7,7 @@ export default function Home() {
       <div className="container">
         <div className="row justify-content-center text-center">
           <div className="col-md-10 col-lg-6">
-            <h1 className="display-5">The Coolest Co-Working Space in Prague</h1>
+            <h1 className="display-5" style={{color: '#fff', fontWeight: 'bold'}}>The Coolest Co-Working Space in Prague</h1>
 
             <p className="lead">Where you choose to work has impact on your productivity and creativity. It also says a lot about your business. We are the right office space.</p>
 
