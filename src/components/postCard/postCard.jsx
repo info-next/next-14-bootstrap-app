@@ -9,7 +9,7 @@ function Postcard() {
       <small>Politics</small>
     </a>
     <div className={styles.title}>
-      <h3 className="h6"><a href="#" className="text-white">Dr. Abdullah Abdullah's Presidential Election Campaign</a></h3>
+      <h3 className="h6"><a href="#" className="text-white">Dr. Abdullah Abdullah&apos;s Presidential Election Campaign</a></h3>
     </div>
   </div>  
   )

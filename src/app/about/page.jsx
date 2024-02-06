@@ -33,7 +33,7 @@ const aboutPage = () => {
 
           <hr />
 
-          <h5>members' bars</h5>
+          <h5>members&apos; bars</h5>
         </div>
       </div>
     </div>

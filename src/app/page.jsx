@@ -52,7 +52,7 @@ export default function Home() {
 
           <hr />
 
-          <h5>members' bars</h5>
+          <h5>members&apos; bars</h5>
         </div>
       </div>
     </div>
@@ -182,7 +182,7 @@ export default function Home() {
             <div className="row justify-content-center">
               <div className="col-md-6">
                 <blockquote className="blockquote">
-                  <small>I've been a memeber for over 3 years. We have always been welcomed by friendly faces and helpful staff. This co-working space has everything we need from Wi-Fi to fresh and delicious coffee.</small>
+                  <small>I&apos; ve been a memeber for over 3 years. We have always been welcomed by friendly faces and helpful staff. This co-working space has everything we need from Wi-Fi to fresh and delicious coffee.</small>
               
                   <footer className="blockquote-footer mt-2">Ziva Stark, CEO</footer>
                 </blockquote>
@@ -194,7 +194,7 @@ export default function Home() {
             <div className="row justify-content-center">
               <div className="col-md-6">
                 <blockquote className="blockquote">
-                  <small>I joined since its opening and I couldn't have found a better working space. Being a member is so inspiring and I love the work environment: spacious, bright and full of entrepreneurs like me!</small>
+                  <small>I joined since its opening and I couldn&apos;t have found a better working space. Being a member is so inspiring and I love the work environment: spacious, bright and full of entrepreneurs like me!</small>
               
                   <footer className="blockquote-footer mt-2">Teresa Swanson, CEO</footer>
                 </blockquote>
