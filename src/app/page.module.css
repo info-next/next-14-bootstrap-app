@@ -1,6 +1,6 @@
 .jumbotron {
     position: relative;
-    background:linear-gradient(to bottom, rgba(6,8,9,0), rgba(49,7,4,0.8)), url(https://source.unsplash.com/9Y8vxVQN4o4/1920x1080) no-repeat bottom center / cover;
+    background:linear-gradient(to bottom, rgba(6,8,9,0), rgba(49,7,4,0.9)), url(https://source.unsplash.com/9Y8vxVQN4o4/1920x1080) no-repeat bottom center / cover;
 }
 
 .jumbotron:before {

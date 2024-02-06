@@ -1,7 +1,5 @@
-import Image from "next/image";
-import styles from './about.module.css'
 
- const aboutPage = () => {
+const aboutPage = () => {
   return (
     <div>
        <section id="sec-about" className="sec-about pt-5 pb-5">
@@ -19,8 +17,7 @@ import styles from './about.module.css'
 
           <hr />
 
-          <h5>
-            members</h5>
+          <h5> members</h5>
         </div>
 
         <div className="col-sm-4">
@@ -87,9 +84,6 @@ import styles from './about.module.css'
       </div>
     </div>
   </section>
-      {/* <div className={styles.imgContainer}>
-      <Image src="/about.png" alt="about" width={500} height={500}/>
-      </div> */}
     </div>
   )
 }
