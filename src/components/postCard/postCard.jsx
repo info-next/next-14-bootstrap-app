@@ -1,17 +1,19 @@
 import React from 'react';
 import styles from './post.module.css';
+import Link from 'next/link';
 
-function Postcard() {
+function Postcard({post}) {
 
   return (
-    <div  className={styles.card}>
+       <div  className={styles.card} >
     <a href="#" className={styles.category}>
       <small>Politics</small>
     </a>
     <div className={styles.title}>
-      <h3 className="h6"><a href="#" className="text-white">Dr. Abdullah Abdullah&apos;s Presidential Election Campaign</a></h3>
+      <h3 className="h6"><Link  href={`/blog/${post.id}`} className="text-white">{post.title}</Link></h3>
     </div>
   </div>  
+   
   )
 }
 

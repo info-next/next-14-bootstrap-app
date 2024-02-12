@@ -1,33 +1,25 @@
+"use client"
 import Postcard from "@/components/postCard/postCard"
 
- const blogPage = () => {
+const getData = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {next: {revalidate: 36000}})
+  if(!res.ok){
+    throw new Error('Failed to fetch data')
+  }
+  return res.json();
+}
+ const blogPage = async () => {
+
+const posts = await getData();
   return (
     <div className="container">
         <div className="row">
-          <div className="col-md-4 p-3">
-            <Postcard/>
+
+        {posts.map((post) => (
+            <div className="col-md-4 p-3" key={post.id}>
+            <Postcard post={post}/>
           </div>
-          <div className="col-md-4 p-3">
-            <Postcard/>
-          </div>
-          <div className="col-md-4 p-3">
-            <Postcard/>
-          </div>
-          <div className="col-md-4 p-3">
-            <Postcard/>
-          </div>
-          <div className="col-md-4 p-3">
-            <Postcard/>
-          </div>
-          <div className="col-md-4 p-3">
-            <Postcard/>
-          </div>
-          <div className="col-md-4 p-3">
-            <Postcard/>
-          </div>
-          <div className="col-md-4 p-3">
-            <Postcard/>
-          </div>
+        ))}
         </div>
     </div>
   )
