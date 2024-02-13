@@ -29,7 +29,7 @@ const NavbarCustom = () => {
 const session = true;
 const isAdmin = true;
   return (
-    <Navbar expand="lg">
+    <Navbar className='py-3' expand="lg">
     <Nav.Link href={"/"} className={styles.logo}>logo</Nav.Link>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
