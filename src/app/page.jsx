@@ -1,4 +1,9 @@
 import styles from './page.module.css'
+
+export const metadata = {
+  title: 'Home',
+  description: 'Home page of Info-next',
+}
 export default function Home() {
   return (
     <>

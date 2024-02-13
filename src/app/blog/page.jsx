@@ -1,6 +1,10 @@
-"use client"
 import Postcard from "@/components/postCard/postCard"
 
+
+export const metadata = {
+  title: 'Blogs',
+  description: 'Blogs page of Info-next',
+}
 const getData = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts", {next: {revalidate: 36000}})
   if(!res.ok){

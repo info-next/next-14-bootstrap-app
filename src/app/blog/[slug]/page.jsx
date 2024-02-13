@@ -1,4 +1,11 @@
-'use client'
+
+export const generateMetadata =async ({params}) => {
+  const post = await getData(params.slug);
+   return {
+    title: post.title,
+    description: post.body
+  }
+}
 
 const getData = async (slug) => {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${slug}`)
@@ -10,7 +17,8 @@ const getData = async (slug) => {
 
 const singlePost = async ({params}) => {
  const slug = params.slug
- const post = await getData(slug)
+ const post = await getData(slug);
+ generateMetadata(post);
 
 return (
 <div className="container my-5">

@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'Contact',
+  description: 'Contact page of Info-next',
+}
 
 const contactPage = () => {
   return (
