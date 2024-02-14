@@ -18,8 +18,6 @@ const getData = async (slug) => {
 const singlePost = async ({params}) => {
  const slug = params.slug
  const post = await getData(slug);
- generateMetadata(post);
-
 return (
 <div className="container my-5">
   <div  style={{ maxWidth: '700px', top: '-80px' }} className="mx-auto text-secondary">
