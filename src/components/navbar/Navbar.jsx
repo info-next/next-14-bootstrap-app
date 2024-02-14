@@ -41,7 +41,6 @@ const isAdmin = true;
                 <>
                  { isAdmin && <Nav.Link className={`${styles.routes} ${pathName === 'admin' && styles.active}`} href="/admin">Admin</Nav.Link>
   }
-                 <button>Logout</button>
                 </>
                
             ):(
