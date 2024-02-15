@@ -36,19 +36,29 @@ const isAdmin = false;
       <Nav className="mr-auto">
         {links.map((link=> (
                     <Nav.Link key={link.name} className={`${styles.routes} ${pathName === link.path && styles.active}`} href={link.path}>{link.name}</Nav.Link>
-        )))}{
-            session?(
-                <>
-                 { isAdmin && <Nav.Link className={`${styles.routes} ${pathName === 'admin' && styles.active}`} href="/admin">Admin</Nav.Link>
-  }
-                </>
-               
-            ):(
-              <>
-              {pathName === '/login' && <Nav.Link className={`${styles.routes} ${pathName === 'register' && styles.active}`} href="/register">Register</Nav.Link>}
-              {pathName === '/register' && <Nav.Link className={`${styles.routes} ${pathName === 'login' && styles.active}`} href="/login">Login</Nav.Link>}
-            </>            
+        )))}
+           
+           {!session ? (
+            <>
+            {pathName === '/login' && (
+              <Nav.Link className={`${styles.routes} ${pathName === '/register' && styles.active}`} href="/register">Register</Nav.Link>
             )}
+            {pathName === '/register' && (
+              <Nav.Link className={`${styles.routes} ${pathName === '/login' && styles.active}`} href="/login">Login</Nav.Link>
+            )}
+            {(pathName !== '/login' && pathName !== '/register') && (
+              <Nav.Link className={`${styles.routes} ${pathName === '/login' && styles.active}`} href="/register">Register</Nav.Link>
+              )}
+            </>
+             
+           ): (
+             <></>
+           )}
+        
+     
+        
+      
+            
       </Nav>
     </Navbar.Collapse>
   </Navbar>
