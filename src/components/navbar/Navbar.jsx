@@ -26,8 +26,8 @@ const NavbarCustom = () => {
     },
   
 ];
-const session = true;
-const isAdmin = true;
+const session = false;
+const isAdmin = false;
   return (
     <Navbar className='py-3' expand="lg">
     <Nav.Link href={"/"} className={styles.logo}>logo</Nav.Link>
@@ -44,9 +44,11 @@ const isAdmin = true;
                 </>
                
             ):(
-              <Nav.Link className={`${styles.routes} ${pathName === 'login' && styles.active}`} href="/login">Login</Nav.Link>
-            )
-        }
+              <>
+              {pathName === '/login' && <Nav.Link className={`${styles.routes} ${pathName === 'register' && styles.active}`} href="/register">Register</Nav.Link>}
+              {pathName === '/register' && <Nav.Link className={`${styles.routes} ${pathName === 'login' && styles.active}`} href="/login">Login</Nav.Link>}
+            </>            
+            )}
       </Nav>
     </Navbar.Collapse>
   </Navbar>
